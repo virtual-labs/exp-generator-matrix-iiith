@@ -147,7 +147,7 @@ function check() {
                 comment.style.display = "block";
                 ans.innerHTML = "<b>Correct Answer!!!</b>";
                 ans.style.color = "green";
-                comment.innerHTML = "<i>Comment</i>: Can you find the systematic generator matrix?";
+                comment.innerHTML = "<i>Comment</i>: This is a valid generator matrix";
             }
         }
 

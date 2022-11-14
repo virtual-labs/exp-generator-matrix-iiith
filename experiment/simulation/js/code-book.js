@@ -13,7 +13,7 @@ function check1() {
         || b14.length == 0 || b15.length == 0 || b16.length == 0) {
         obs.innerHTML = "<b>C0.</b> Enter all the bits."
         obs.style.color = "black";
-        ans1.textContent = "";
+        ans1.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -21,7 +21,7 @@ function check1() {
         || b14.length > 1 || b15.length > 1 || b16.length > 1) {
         obs.innerHTML = "<b>C0.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans1.textContent = "";
+        ans1.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -29,19 +29,19 @@ function check1() {
         || b14 > 1 || b14 < 0 || b15 > 1 || b15 < 0 || b16 > 1 || b16 < 0) {
         obs.innerHTML = "<b>C0.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans1.textContent = "";
+        ans1.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b11 == 0 && b12 == 0 && b13 == 0 &&
         b14 == 0 && b15 == 0 && b16 == 0) {
-        ans1.textContent = "\u2714";
+        ans1.innerHTML = "\u2714";
         obs.innerHTML = "<b>C0. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans1.textContent = "\u2716";
+        ans1.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C0. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C0. Wrong Again :(</b>";
@@ -69,7 +69,7 @@ function check2() {
         || b24.length == 0 || b25.length == 0 || b26.length == 0) {
         obs.innerHTML = "<b>C1.</b> Enter all the bits."
         obs.style.color = "black";
-        ans2.textContent = "";
+        ans2.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -77,7 +77,7 @@ function check2() {
         || b24.length > 1 || b25.length > 1 || b26.length > 1) {
         obs.innerHTML = "<b>C1.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans2.textContent = "";
+        ans2.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -85,19 +85,19 @@ function check2() {
         || b24 > 1 || b24 < 0 || b25 > 1 || b25 < 0 || b26 > 1 || b26 < 0) {
         obs.innerHTML = "<b>C1.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans2.textContent = "";
+        ans2.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b21 == 1 && b22 == 1 && b23 == 0 &&
         b24 == 0 && b25 == 1 && b26 == 1) {
-        ans2.textContent = "\u2714";
+        ans2.innerHTML = "\u2714";
         obs.innerHTML = "<b>C1. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans2.textContent = "\u2716";
+        ans2.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C1. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C1. Wrong Again :(</b>";
@@ -125,7 +125,7 @@ function check3() {
         || b34.length == 0 || b35.length == 0 || b36.length == 0) {
         obs.innerHTML = "<b>C2.</b> Enter all the bits."
         obs.style.color = "black";
-        ans3.textContent = "";
+        ans3.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -133,7 +133,7 @@ function check3() {
         || b34.length > 1 || b35.length > 1 || b36.length > 1) {
         obs.innerHTML = "<b>C2.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans3.textContent = "";
+        ans3.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -141,19 +141,19 @@ function check3() {
         || b34 > 1 || b34 < 0 || b35 > 1 || b35 < 0 || b36 > 1 || b36 < 0) {
         obs.innerHTML = "<b>C2.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans3.textContent = "";
+        ans3.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b31 == 1 && b32 == 0 && b33 == 0 &&
         b34 == 1 && b35 == 1 && b36 == 0) {
-        ans3.textContent = "\u2714";
+        ans3.innerHTML = "\u2714";
         obs.innerHTML = "<b>C2. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans3.textContent = "\u2716";
+        ans3.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C2. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C2. Wrong Again :(</b>";
@@ -181,7 +181,7 @@ function check4() {
         || b44.length == 0 || b45.length == 0 || b46.length == 0) {
         obs.innerHTML = "<b>C3.</b> Enter all the bits."
         obs.style.color = "black";
-        ans4.textContent = "";
+        ans4.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -189,7 +189,7 @@ function check4() {
         || b44.length > 1 || b45.length > 1 || b46.length > 1) {
         obs.innerHTML = "<b>C3.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans4.textContent = "";
+        ans4.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -197,19 +197,19 @@ function check4() {
         || b44 > 1 || b44 < 0 || b45 > 1 || b45 < 0 || b46 > 1 || b46 < 0) {
         obs.innerHTML = "<b>C3.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans4.textContent = "";
+        ans4.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b41 == 0 && b42 == 1 && b43 == 0 &&
         b44 == 1 && b45 == 0 && b46 == 1) {
-        ans4.textContent = "\u2714";
+        ans4.innerHTML = "\u2714";
         obs.innerHTML = "<b>C3. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans4.textContent = "\u2716";
+        ans4.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C3. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C3. Wrong Again :(</b>";
@@ -237,7 +237,7 @@ function check5() {
         || b54.length == 0 || b55.length == 0 || b56.length == 0) {
         obs.innerHTML = "<b>C4.</b> Enter all the bits."
         obs.style.color = "black";
-        ans5.textContent = "";
+        ans5.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -245,7 +245,7 @@ function check5() {
         || b54.length > 1 || b55.length > 1 || b56.length > 1) {
         obs.innerHTML = "<b>C4.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans5.textContent = "";
+        ans5.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -253,19 +253,19 @@ function check5() {
         || b54 > 1 || b54 < 0 || b55 > 1 || b55 < 0 || b56 > 1 || b56 < 0) {
         obs.innerHTML = "<b>C4.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans5.textContent = "";
+        ans5.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b51 == 1 && b52 == 1 && b53 == 1 &&
         b54 == 0 && b55 == 0 && b56 == 0) {
-        ans5.textContent = "\u2714";
+        ans5.innerHTML = "\u2714";
         obs.innerHTML = "<b>C4. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans5.textContent = "\u2716";
+        ans5.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C4. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C4. Wrong Again :(</b>";
@@ -293,7 +293,7 @@ function check6() {
         || b64.length == 0 || b65.length == 0 || b66.length == 0) {
         obs.innerHTML = "<b>C5.</b> Enter all the bits."
         obs.style.color = "black";
-        ans6.textContent = "";
+        ans6.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -301,7 +301,7 @@ function check6() {
         || b64.length > 1 || b65.length > 1 || b66.length > 1) {
         obs.innerHTML = "<b>C5.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans6.textContent = "";
+        ans6.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -309,19 +309,19 @@ function check6() {
         || b64 > 1 || b64 < 0 || b65 > 1 || b65 < 0 || b66 > 1 || b66 < 0) {
         obs.innerHTML = "<b>C5.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans6.textContent = "";
+        ans6.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b61 == 0 && b62 == 0 && b63 == 1 &&
         b64 == 0 && b65 == 1 && b66 == 1) {
-        ans6.textContent = "\u2714";
+        ans6.innerHTML = "\u2714";
         obs.innerHTML = "<b>C5. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans6.textContent = "\u2716";
+        ans6.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C5. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C5. Wrong Again :(</b>";
@@ -349,7 +349,7 @@ function check7() {
         || b74.length == 0 || b75.length == 0 || b76.length == 0) {
         obs.innerHTML = "<b>C6.</b> Enter all the bits."
         obs.style.color = "black";
-        ans7.textContent = "";
+        ans7.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -357,7 +357,7 @@ function check7() {
         || b74.length > 1 || b75.length > 1 || b76.length > 1) {
         obs.innerHTML = "<b>C6.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans7.textContent = "";
+        ans7.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -365,19 +365,19 @@ function check7() {
         || b74 > 1 || b74 < 0 || b75 > 1 || b75 < 0 || b76 > 1 || b76 < 0) {
         obs.innerHTML = "<b>C6.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans7.textContent = "";
+        ans7.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b71 == 0 && b72 == 1 && b73 == 1 &&
         b74 == 1 && b75 == 1 && b76 == 0) {
-        ans7.textContent = "\u2714";
+        ans7.innerHTML = "\u2714";
         obs.innerHTML = "<b>C6. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans7.textContent = "\u2716";
+        ans7.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C6. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C6. Wrong Again :(</b>";
@@ -405,7 +405,7 @@ function check8() {
         || b84.length == 0 || b85.length == 0 || b86.length == 0) {
         obs.innerHTML = "<b>C7.</b> Enter all the bits."
         obs.style.color = "black";
-        ans8.textContent = "";
+        ans8.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -413,7 +413,7 @@ function check8() {
         || b84.length > 1 || b85.length > 1 || b86.length > 1) {
         obs.innerHTML = "<b>C7.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans8.textContent = "";
+        ans8.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
@@ -421,19 +421,19 @@ function check8() {
         || b84 > 1 || b84 < 0 || b85 > 1 || b85 < 0 || b86 > 1 || b86 < 0) {
         obs.innerHTML = "<b>C7.</b> Enter values from {0, 1}.";
         obs.style.color = "black";
-        ans8.textContent = "";
+        ans8.innerHTML = "&nbsp;&nbsp;&nbsp;";
         return;
     }
 
     else if (b81 == 1 && b82 == 0 && b83 == 1 &&
         b84 == 1 && b85 == 0 && b86 == 1) {
-        ans8.textContent = "\u2714";
+        ans8.innerHTML = "\u2714";
         obs.innerHTML = "<b>C7. Correct Answer!!!</b>";
         obs.style.color = "green";
     }
 
     else {
-        ans8.textContent = "\u2716";
+        ans8.innerHTML = "\u2716";
         obs.style.color = "red";
         if (obs.innerHTML == "<b>C7. Wrong Answer :(</b>") {
             obs.innerHTML = "<b>C7. Wrong Again :(</b>";
@@ -451,7 +451,7 @@ function reset1() {
     const obs = document.getElementById("observations");
 
     form1.reset();
-    ans1.textContent = "";
+    ans1.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -461,7 +461,7 @@ function reset2() {
     const obs = document.getElementById("observations");
 
     form2.reset();
-    ans2.textContent = "";
+    ans2.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -471,7 +471,7 @@ function reset3() {
     const obs = document.getElementById("observations");
 
     form3.reset();
-    ans3.textContent = "";
+    ans3.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -481,7 +481,7 @@ function reset4() {
     const obs = document.getElementById("observations");
 
     form4.reset();
-    ans4.textContent = "";
+    ans4.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -491,7 +491,7 @@ function reset5() {
     const obs = document.getElementById("observations");
 
     form5.reset();
-    ans5.textContent = "";
+    ans5.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -501,7 +501,7 @@ function reset6() {
     const obs = document.getElementById("observations");
 
     form6.reset();
-    ans6.textContent = "";
+    ans6.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -511,7 +511,7 @@ function reset7() {
     const obs = document.getElementById("observations");
 
     form7.reset();
-    ans7.textContent = "";
+    ans7.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
@@ -521,7 +521,7 @@ function reset8() {
     const obs = document.getElementById("observations");
 
     form8.reset();
-    ans8.textContent = "";
+    ans8.innerHTML = "&nbsp;&nbsp;&nbsp;";
     obs.innerHTML = "";
 }
 
