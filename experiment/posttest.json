@@ -1,39 +1,67 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "<img src='./images/exp2_post1.png'></img>",
+        "answers": {
+          "a": "Yes",
+          "b": "No"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "<img src='./images/exp2_post2.png'></img>",
+        "answers": {
+          "a": "Yes",
+          "b": "No"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "<img src='./images/exp2_post3.png'></img>",
+        "answers": {
+          "a": "16",
+          "b": "5",
+          "c": "9",
+          "d": "None of the above"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "<img src='./images/exp2_post4.png'></img>",
+        "answers": {
+          "a": "1",
+          "b": "2",
+          "c": "3",
+          "d": "4"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "<img src='./images/exp2_post5.png'></img>",
+        "answers": {
+          "a": "[1 1 0 1 0 0 1 0]",
+          "b": "[0 1 0 1 0 1 1 1]",
+          "c": "[1 0 0 1 0 1 1 0]",
+          "d": "[1 0 0 1 0 1 0 1]"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "<img src='./images/exp2_post6.png'></img>",
+        "answers": {
+          "a": "C\u2081, C\u2082, C\u2083",
+          "b": "C\u2081",
+          "c": "C\u2081 and C\u2083",
+          "d": "C\u2082 and C\u2083"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+      }
+    ]
+  }
