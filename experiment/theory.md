@@ -27,6 +27,15 @@ g_{k,1} & g_{k,2} & \ldots & g_{k,n}
 \end{bmatrix}}_{G}  .
 \end{align*}$$
 
+$$\begin{align*}
+\begin{bmatrix} v_1 & v_2 & \ldots & v_{n} \end{bmatrix} = 
+\begin{bmatrix} m_1 & m_2 & \ldots & m_{k} \end{bmatrix}
+\times 
+\begin{bmatrix} 
+1 & 0  & 0\\ 
+1 & 1 & 1
+\end{bmatrix}  .
+\end{align*}$$
 
 
 This matrix $G$ is called as a generator matrix of
@@ -86,7 +95,7 @@ Let us consider some examples.
     \end{bmatrix} ,
     \end{align*}$$
      where the matrix 
-     $G=\begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix}$ 
+     $G=\begin{bmatrix} 1 & 0 & 1\\ 0 & 1 & 1\end{bmatrix}$ 
      is a generator matrix of $(3,2)$ SPC code.
 
 - Example-3: Consider the following generator matrix.
@@ -96,8 +105,8 @@ Let us consider some examples.
     $$\begin{align*}
     \begin{bmatrix} 0 & 0 \end{bmatrix} \times 
     \begin{bmatrix} 
-    1 & 0 & 0 & 1 \\ 
-    0 & 1 & 1 & 1  \\
+    1 & 0 & 0 & 1\\ 
+    0 & 1 & 1 & 1\\
     \end{bmatrix}  
     = \begin{bmatrix} 0 & 0 & 0 & 0 \end{bmatrix} \\\end{align*}$$ 
     
@@ -253,7 +262,7 @@ P^{\prime} = \begin{bmatrix}
 ## 2 Parity check matrix
 
 A linear block code can also be defined using a parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$ as follows.
-#### Definition 1  *Linear block code $\mathcal{C}(n,k)$): For the given parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$, the linear block corresponding to it is defined as the collection of all possible vectors $\mathbf{v} \in \mathbb{F}_2^n$ that satisfy the condition $\mathbf{v}H^T = \mathbf{0}$, i.e.,*
+#### Definition 1  *(Linear block code $\mathcal{C}(n,k)$): For the given parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$, the linear block corresponding to it is defined as the collection of all possible vectors $\mathbf{v} \in \mathbb{F}_2^n$ that satisfy the condition $\mathbf{v}H^T = \mathbf{0}$, i.e.,*
 $$\begin{align*}
 \mathcal{C}(n,k) = \left\{ \mathbf{v} \in \mathbb{F}_2^n \hspace{0.05in}{such}
 \hspace{0.05in}{} {that}\hspace{0.05in}{} \mathbf{v}H^T = \mathbf{0} \right\}. 
@@ -291,6 +300,15 @@ $$\begin{align} H = \begin{bmatrix} I_{n-k} & P^{\prime T} \end{bmatrix}
 0 & 1 & 1 & 1  \\
 \end{bmatrix},
 \end{align}$$
+
+$$\begin{align*}  
+I_k = \begin{bmatrix} 
+1 & 0 & \ldots & 0 \\
+0 & 1 & \ldots & 0 \\
+\vdots & \vdots & \ldots & \vdots \\
+0 & 0 & \ldots & 1 
+\end{bmatrix}.
+\end{align*}$$
 
 where $P^{\prime}$ is defined in Eq. (3).
 
