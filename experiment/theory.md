@@ -32,7 +32,18 @@ $$\begin{align*}
 \begin{bmatrix} m_1 & m_2 & \ldots & m_{k} \end{bmatrix}
 \times 
 \begin{bmatrix} 
-1 & 0  & 0\\ 
+1 & 0 & 0\\ 
+1 & 1 & 1
+\end{bmatrix}  .
+\end{align*}$$
+
+$$\begin{align*}
+\begin{bmatrix} v_1 & v_2 & \ldots & v_{n} \end{bmatrix} = 
+\begin{bmatrix} m_1 & m_2 & \ldots & m_{k} \end{bmatrix}
+\times 
+\begin{bmatrix} 
+1 & 0 & 0\\ 
+1 & 0 & 0\\ 
 1 & 1 & 1
 \end{bmatrix}  .
 \end{align*}$$
@@ -64,8 +75,9 @@ Let us consider some examples.
     \begin{bmatrix} 0 & 0 & 0 \end{bmatrix} &=
     \begin{bmatrix} 0 & 0 \end{bmatrix} 
     \times 
-    \begin{bmatrix} 1 & 0 & 1\\
-                    0 & 1 & 1\\ 
+    \begin{bmatrix} 
+    1 & 0 & 1\\
+    0 & 1 & 1
     \end{bmatrix}
     \end{align*}$$
       
@@ -73,8 +85,9 @@ Let us consider some examples.
     \begin{bmatrix} 0 & 1 & 1 \end{bmatrix} &=
     \begin{bmatrix} 0 & 1 \end{bmatrix}
     \times 
-    \begin{bmatrix} 1 & 0 & 1 \\ 
-                    0 & 1 & 1  \\ 
+    \begin{bmatrix} 
+    1 & 0 & 1\\ 
+    0 & 1 & 1  
     \end{bmatrix} 
     \end{align*}$$ 
   
@@ -82,16 +95,18 @@ Let us consider some examples.
     \begin{bmatrix} 1 & 0 & 1 \end{bmatrix} &=
     \begin{bmatrix} 1 & 0 \end{bmatrix} 
     \times
-    \begin{bmatrix} 1 & 0 & 1 \\ 
-                    0 & 1 & 1 \\
+    \begin{bmatrix} 
+    1 & 0 & 1\\ 
+    0 & 1 & 1 
     \end{bmatrix} 
     \end{align*}$$ 
     $$\begin{align*}
     \begin{bmatrix} 1 & 1 & 0 \end{bmatrix} &=
     \begin{bmatrix} 1 & 1 \end{bmatrix} 
     \times 
-    \begin{bmatrix} 1 & 0 & 1 \\ 
-                    0 & 1 & 1\\ 
+    \begin{bmatrix} 
+    1 & 0 & 1\\ 
+    0 & 1 & 1
     \end{bmatrix} ,
     \end{align*}$$
      where the matrix 
@@ -106,39 +121,39 @@ Let us consider some examples.
     \begin{bmatrix} 0 & 0 \end{bmatrix} \times 
     \begin{bmatrix} 
     1 & 0 & 0 & 1\\ 
-    0 & 1 & 1 & 1\\
+    0 & 1 & 1 & 1
     \end{bmatrix}  
     = \begin{bmatrix} 0 & 0 & 0 & 0 \end{bmatrix} \\\end{align*}$$ 
     
     $$\begin{align*}
     \begin{bmatrix} 0 & 1 \end{bmatrix} \times 
     \begin{bmatrix} 
-    1 & 0 & 0 & 1 \\ 
-    0 & 1 & 1 & 1  \\
+    1 & 0 & 0 & 1\\ 
+    0 & 1 & 1 & 1
     \end{bmatrix}  
     = \begin{bmatrix} 0 & 0 & 0 & 0 \end{bmatrix} \\\end{align*}$$ 
     
     $$\begin{align*}
     \begin{bmatrix} 0 & 0 \end{bmatrix} \times 
     \begin{bmatrix} 
-    1 & 0 & 0 & 1 \\ 
-    0 & 1 & 1 & 1  \\
+    1 & 0 & 0 & 1\\ 
+    0 & 1 & 1 & 1
     \end{bmatrix}  
     = \begin{bmatrix} 1 & 0 & 0 & 1 \end{bmatrix} \\\end{align*}$$ 
 
     $$\begin{align*}
     \begin{bmatrix} 1 & 0 \end{bmatrix} \times 
     \begin{bmatrix} 
-    1 & 0 & 0 & 1 \\ 
-    0 & 1 & 1 & 1  \\
+    1 & 0 & 0 & 1\\ 
+    0 & 1 & 1 & 1
     \end{bmatrix}  
     = \begin{bmatrix} 0 & 1 & 1 & 1 \end{bmatrix} \\\end{align*}$$ 
     
     $$\begin{align*}
     \begin{bmatrix} 1 & 1 \end{bmatrix} \times 
     \begin{bmatrix} 
-    1 & 0 & 0 & 1 \\ 
-    0 & 1 & 1 & 1  \\
+    1 & 0 & 0 & 1\\ 
+    0 & 1 & 1 & 1
     \end{bmatrix}  
     = \begin{bmatrix} 1 & 1 & 1 & 0 \end{bmatrix} \\\end{align*}$$     
 
@@ -159,8 +174,8 @@ Let us consider some examples.
 - Example-4: Consider the following generator matrix.
     $$\begin{align*}
     G = \begin{bmatrix} 
-    1 & 0 & 1 & 1 & 0 \\ 
-    0 & 1 & 0 & 1 & 1 \\
+    1 & 0 & 1 & 1 & 0\\ 
+    0 & 1 & 0 & 1 & 1
     0 & 0 & 0 & 1 & 1 
     \end{bmatrix} 
     \end{align*}$$
@@ -235,7 +250,7 @@ I_2 = \begin{bmatrix}
 \hspace{0.05in}{and} \hspace{0.05in}{} 
 P = \begin{bmatrix} 
 1 \\ 
-1  \\
+1
 \end{bmatrix} .
 \end{align}$$
 
@@ -245,18 +260,19 @@ Generator matrix of Example-3 can be written as
 $$G=\begin{align}
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  \\
+0 & 1 & 1 & 1
 \end{bmatrix} 
 = \begin{bmatrix} I_2 & P\end{bmatrix}
 \hspace{0.05in}{where} \hspace{0.05in}{} 
 I_2 = \begin{bmatrix} 
 1 & 0 \\ 
-0 & 1  \\
+0 & 1
 \end{bmatrix} 
 \hspace{0.05in}{and} \hspace{0.05in}{} 
 P^{\prime} = \begin{bmatrix} 
 0 & 1 \\ 
-1 & 1  \\\end{bmatrix}.
+1 & 1 
+\end{bmatrix}.
 \end{align}$$
 
 ## 2 Parity check matrix
@@ -297,7 +313,7 @@ $$\begin{align} H = \begin{bmatrix} I_{n-k} & P^{\prime T} \end{bmatrix}
 = 
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  \\
+0 & 1 & 1 & 1
 \end{bmatrix},
 \end{align}$$
 
