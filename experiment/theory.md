@@ -50,16 +50,28 @@ $G  = \begin{bmatrix} 1 & 1 & 1\end{bmatrix}$ is a generator matrix.
     
 
     These codeword can be written as 
+ 
     $$\begin{align*}
-      \begin{bmatrix} 0 & 0 & 0 
-      \end{bmatrix} &=\begin{bmatrix} 0 & 0 \end{bmatrix} \times 
-      \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix}   \\
-      \begin{bmatrix} 0 & 1 & 1 \end{bmatrix} &=\begin{bmatrix} 0 & 1 \end{bmatrix} \times \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1
-      \end{bmatrix}  \\
-      \begin{bmatrix} 1 & 0 & 1 \end{bmatrix} 
-      &=\begin{bmatrix} 1 & 0 \end{bmatrix} \times \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix}   \\
+      \begin{bmatrix} 0 & 0 & 0 \end{bmatrix} &=
+      \begin{bmatrix} 0 & 0 \end{bmatrix} 
+      \times 
+      \begin{bmatrix} 1 & 0 & 1\\
+                      0 & 1 & 1\\ \end{bmatrix}   \\
+      \begin{bmatrix} 0 & 1 & 1 \end{bmatrix} &=
+      \begin{bmatrix} 0 & 1 \end{bmatrix}
+      \times 
+      \begin{bmatrix} 1 & 0 & 1 \\ 
+                      0 & 1 & 1  \\ \end{bmatrix}  \\
+      \begin{bmatrix} 1 & 0 & 1 \end{bmatrix} &=
+      \begin{bmatrix} 1 & 0 \end{bmatrix} 
+      \times
+      \begin{bmatrix} 1 & 0 & 1 \\ 
+                      0 & 1 & 1 \\ \end{bmatrix}   \\
       \begin{bmatrix} 1 & 1 & 0 \end{bmatrix} &=
-      \begin{bmatrix} 1 & 1 \end{bmatrix} \times \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix} ,
+      \begin{bmatrix} 1 & 1 \end{bmatrix} 
+      \times 
+      \begin{bmatrix} 1 & 0 & 1 \\ 
+                      0 & 1 & 1\\ \end{bmatrix} ,
       \end{align*}$$
      where the matrix $G$ = $$\begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 1\end{bmatrix}$$ is a generator matrix of $(3,2)$ SPC code.
 
@@ -67,7 +79,7 @@ $G  = \begin{bmatrix} 1 & 1 & 1\end{bmatrix}$ is a generator matrix.
 $$\begin{align*}
 G = \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix} 
 \end{align*}
 $$
@@ -76,25 +88,25 @@ $$\begin{align*}
 \begin{bmatrix} 0 & 0 \end{bmatrix} \times 
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix}   
 &= \begin{bmatrix} 0 & 0 & 0 & 0 \end{bmatrix} \\
 \begin{bmatrix} 1 & 0 \end{bmatrix} \times 
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix}   
 &= \begin{bmatrix} 1 & 0 & 0 & 1 \end{bmatrix} \\
 \begin{bmatrix} 0 & 1 \end{bmatrix} \times 
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix}   
 &= \begin{bmatrix} 0 & 1 & 1 & 1 \end{bmatrix} \\
 \begin{bmatrix} 1 & 1 \end{bmatrix} \times 
 \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix}   
 &= \begin{bmatrix} 1 & 1 & 1 & 0 \end{bmatrix}.
 \end{align*}$$
@@ -182,18 +194,18 @@ Note that an identity matrix $I_k$ is a diagonal matrix with $1$ as diagonal ent
 It can be verified that the generator matrices corresponding to Examples-1, 2, and 3 can be written as $G = \begin{bmatrix} I_k & P \end{bmatrix}$. For example, generator matrix of Example-2 can be written as
 $$\begin{align} G = \begin{bmatrix} 
 1 & 0 & 1 \\ 
-0 & 1 & 1  
+0 & 1 & 1  \\
 \end{bmatrix}
 = \begin{bmatrix} I_2 & P\end{bmatrix}
 \hspace{0.05in}{where} \hspace{0.05in}{} 
 I_2 = \begin{bmatrix} 
 1 & 0 \\ 
-0 & 1  
+0 & 1  \\
 \end{bmatrix}
 \hspace{0.05in}{and} \hspace{0.05in}{} 
 P = \begin{bmatrix} 
 1 \\ 
-1  
+1  \\
 \end{bmatrix} .
 \end{align}$$
 
@@ -202,17 +214,17 @@ Generator matrix of Example-3 can be written as
 $$\begin{align}  
 G = \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix} 
 = \begin{bmatrix} I_2 & P\end{bmatrix}  
 I_2 = \begin{bmatrix} 
 1 & 0 \\ 
-0 & 1  
+0 & 1  \\
 \end{bmatrix} 
 \hspace{0.05in}{and} \hspace{0.05in}{} 
 P^{\prime} = \begin{bmatrix} 
 0 & 1 \\ 
-1 & 1  
+1 & 1  \\
 \end{bmatrix} .
 \end{align}$$
 
@@ -253,7 +265,7 @@ $$\begin{align}
 H = \begin{bmatrix} I_{n-k} & P^{\prime T} \end{bmatrix}
 = \begin{bmatrix} 
 1 & 0 & 0 & 1 \\ 
-0 & 1 & 1 & 1  
+0 & 1 & 1 & 1  \\
 \end{bmatrix},
 \end{align}$$
 
