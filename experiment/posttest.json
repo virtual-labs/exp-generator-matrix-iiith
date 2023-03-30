@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "<img src='./images/exp2_post1.png'></img>",
+        "question": "<img src='./images/exp2@post1.png'></img>",
         "answers": {
           "a": "Yes",
           "b": "No"
@@ -11,7 +11,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp2_post2.png'></img>",
+        "question": "<img src='./images/exp2@post2.png'></img>",
         "answers": {
           "a": "Yes",
           "b": "No"
@@ -20,7 +20,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp2_post3.png'></img>",
+        "question": "<img src='./images/exp2@post3.png'></img>",
         "answers": {
           "a": "16",
           "b": "5",
@@ -31,7 +31,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp2_post4.png'></img>",
+        "question": "<img src='./images/exp2@post4.png'></img>",
         "answers": {
           "a": "1",
           "b": "2",
@@ -42,7 +42,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp2_post5.png'></img>",
+        "question": "<img src='./images/exp2@post5.png'></img>",
         "answers": {
           "a": "[1 1 0 1 0 0 1 0]",
           "b": "[0 1 0 1 0 1 1 1]",
@@ -53,7 +53,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp2_post6.png'></img>",
+        "question": "<img src='./images/exp2@post6.png'></img>",
         "answers": {
           "a": "C\u2081, C\u2082, C\u2083",
           "b": "C\u2081",
