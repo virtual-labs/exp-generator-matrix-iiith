@@ -8,4 +8,8 @@ code. We will then introduce a parity check matrix of the code and also
 explore some properties of the generator and parity check matrix of the
 code.
 
+The structure of the experiment is as follows:
+- Generator matrix
+- Parity check matrix
+
 
