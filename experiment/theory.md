@@ -1,6 +1,4 @@
-In Experiment-1, we provided a brief introduction to block codes and also defined a class of block codes, linear block codes. For rest of the experiments in this virtual lab we shall now focus on linear block codes.  
-
-In Experiment-1, we also introduced two simple classes of linear block codes, repetition and single parity check codes. In this experiment, we shall focus on the theory general linear block codes. We shall study two important matrices associated with the given linear block code,  generator matrix (denoted by $G$) and parity check matrix (denoted by $H$). 
+In Experiment-1, we provided a brief introduction to block codes and also defined a class of block codes, linear block codes. For rest of the experiments in this virtual lab we shall now focus on linear block codes.  In Experiment-1, we also introduced two simple classes of linear block codes, repetition and single parity check codes. In this experiment, we shall focus on the theory general linear block codes. We shall study two important matrices associated with the given linear block code,  generator matrix (denoted by $G$) and parity check matrix (denoted by $H$). 
 
 The theory associated with Experiment-2 is divided into two parts:
 <br>
@@ -209,7 +207,6 @@ G =
 \end{align}$$
  
  Note that the given code $\mathcal{C}(n,k)=\hspace{0.01in}{span}\{\mathbf{g}_1, \mathbf{g}_2, \ldots, \mathbf{g}_k\}$, i.e., the rows of the matrix $G$ defined in Eq. (1) *generate* (span) the linear block code $\mathcal{C}(n,k)$. Hence this matrix $G$ is termed as a *generator matrix*. Note that different bases of the vector space $\mathcal{C}(n,k)$ will correspond to a different generator matrix and hence a generator matrix for the given code is not unique.  
-
 For Examples-3 and 4 it can be verified that the rows corresponding to the respective generator matrices does form a basis for the respective linear block codes. 
 
 ## 1.2 Systematic generator matrix
@@ -278,6 +275,7 @@ P^{\prime} = \begin{bmatrix}
 ## 2 Parity check matrix
 
 A linear block code can also be defined using a parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$ as follows.
+<br/>
 **Definition 1**   Linear block code $\mathcal{C}(n,k)$): For the given parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$, the linear block corresponding to it is defined as the collection of all possible vectors $\mathbf{v} \in \mathbb{F}_2^n$ that satisfy the condition $\mathbf{v}H^T = \mathbf{0}$, i.e.,
 $$\begin{align*}
 \mathcal{C}(n,k) = \left\{ \mathbf{v} \in \mathbb{F}_2^n \hspace{0.05in}{such}
@@ -285,11 +283,10 @@ $$\begin{align*}
 \end{align*}$$
 
 It can be seen from Definition 1 that, one can verify whether the given vector is a codeword or not using a parity check matrix. 
-Similar to generator matrix, a parity check matrix also need not be unique. 
+Similar to generator matrix, a parity check matrix also need not be unique. We shall next define the dual code
+$\mathcal{C}^{\perp}(n,n-k)$ of the linear block code $\mathcal{C}(n,k)$.
 
-We shall next define the dual code $\mathcal{C}^{\perp}(n,n-k)$ of the linear block code $\mathcal{C}(n,k)$.
-
-
+<br/>
 **Definition 2** Dual code: Consider a linear block code $\mathcal{C}(n,k)$ with parity check matrix $H$. Let $\mathcal{C}^{\perp}(n,n-k)$ be the linear block obtained by choosing $H$ as its generator matrix. Then $\mathcal{C}^{\perp}(n,n-k)$ is said to be the dual code of $\mathcal{C}(n,k)$, i.e., for any $\mathbf{v} \in \mathcal{C}^{\perp}(n,k)$ and $\mathbf{w} \in \mathcal{C}^{\perp}(n,n-k)$ we have $\mathbf{v}\mathbf{w}^T = 0$.
 
 For the systematic code with generator matrix $G =\begin{bmatrix} I_k & P \end{bmatrix}$, parity check matrix $H$ can be obtained as
