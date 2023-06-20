@@ -276,6 +276,7 @@ P^{\prime} = \begin{bmatrix}
 
 A linear block code can also be defined using a parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$ as follows.
 <br/>
+<br/>
 **Definition 1**   Linear block code $\mathcal{C}(n,k)$): For the given parity check matrix $H\in \mathbb{F}_2^{n-k \times n}$, the linear block corresponding to it is defined as the collection of all possible vectors $\mathbf{v} \in \mathbb{F}_2^n$ that satisfy the condition $\mathbf{v}H^T = \mathbf{0}$, i.e.,
 $$\begin{align*}
 \mathcal{C}(n,k) = \left\{ \mathbf{v} \in \mathbb{F}_2^n \hspace{0.05in}{such}
@@ -287,7 +288,8 @@ Similar to generator matrix, a parity check matrix also need not be unique. We s
 $\mathcal{C}^{\perp}(n,n-k)$ of the linear block code $\mathcal{C}(n,k)$.
 
 <br/>
-**Definition 2** Dual code: Consider a linear block code $\mathcal{C}(n,k)$ with parity check matrix $H$. Let $\mathcal{C}^{\perp}(n,n-k)$ be the linear block obtained by choosing $H$ as its generator matrix. Then $\mathcal{C}^{\perp}(n,n-k)$ is said to be the dual code of $\mathcal{C}(n,k)$, i.e., for any $\mathbf{v} \in \mathcal{C}^{\perp}(n,k)$ and $\mathbf{w} \in \mathcal{C}^{\perp}(n,n-k)$ we have $\mathbf{v}\mathbf{w}^T = 0$.
+
+**Definition 2**  Dual code: Consider a linear block code $\mathcal{C}(n,k)$ with parity check matrix $H$. Let $\mathcal{C}^{\perp}(n,n-k)$ be the linear block obtained by choosing $H$ as its generator matrix. Then $\mathcal{C}^{\perp}(n,n-k)$ is said to be the dual code of $\mathcal{C}(n,k)$, i.e., for any $\mathbf{v} \in \mathcal{C}^{\perp}(n,k)$ and $\mathbf{w} \in \mathcal{C}^{\perp}(n,n-k)$ we have $\mathbf{v}\mathbf{w}^T = 0$.
 
 For the systematic code with generator matrix $G =\begin{bmatrix} I_k & P \end{bmatrix}$, parity check matrix $H$ can be obtained as
 
