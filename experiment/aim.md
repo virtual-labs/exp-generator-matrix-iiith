@@ -9,6 +9,8 @@ explore some properties of the generator and parity check matrix of the
 code.
 
 The structure of the experiment is as follows:
+- Encoding
+- Codebook generation
 - Generator matrix
 - Parity check matrix
 

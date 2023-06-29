@@ -53,7 +53,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "6. Consider the matrices $\\mathbf{G_1, G_2, H_1 and H_2 }$ given below. Identify generator matrix-parity check matrix pairs. $$ \\begin{align*} G_1 = \\begin{bmatrix} 1 & 0 & 0 & 1 & 1 & 0\\\\ 0 & 1 & 1 & 0 & 0 & 0\\\\ 0 & 0 & 0 & 1 & 1 & 0\\\\ 1 & 0 & 0 & 0 & 1 & 1 \\end{bmatrix},\\hspace{1cm} G_2 = \\begin{bmatrix} 1 & 0 & 1\\\\ 0 & 1 & 1 \\end{bmatrix} \\\\ H_1 = \\begin{bmatrix} 1 & 1 & 1 \\end{bmatrix}, \\hspace{1cm} H_2 = \\begin{bmatrix} 1 & 0 & 0 & 1 & 1 & 0\\\\ 0 & 1 & 1 & 1 & 0 & 0 \\end{bmatrix}. \\end{align*}$$",
+        "question": "6. Consider the matrices $\\mathbf{G_1, G_2, H_1}$ and $\\mathbf{H_2}$ given below. Identify generator matrix-parity check matrix pairs. $$ \\begin{align*} G_1 = \\begin{bmatrix} 1 & 0 & 0 & 1 & 1 & 0\\\\ 0 & 1 & 1 & 0 & 0 & 0\\\\ 0 & 0 & 0 & 1 & 1 & 0\\\\ 1 & 0 & 0 & 0 & 1 & 1 \\end{bmatrix},\\hspace{1cm} G_2 = \\begin{bmatrix} 1 & 0 & 1\\\\ 0 & 1 & 1 \\end{bmatrix} \\\\ H_1 = \\begin{bmatrix} 1 & 1 & 1 \\end{bmatrix}, \\hspace{1cm} H_2 = \\begin{bmatrix} 1 & 0 & 0 & 1 & 1 & 0\\\\ 0 & 1 & 1 & 1 & 0 & 0 \\end{bmatrix}. \\end{align*}$$",
         "answers": {
           "a": "Both $(G_1,H_1)$ and $(G_2,H_2)$",
           "b": "Only $(G_1,H_2)$",
