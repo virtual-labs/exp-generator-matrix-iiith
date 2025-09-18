@@ -1,6 +1,5 @@
 There are four tasks in this experiment.
 <br>
-<br>
 
 **Procedure for Encoding:**
 
