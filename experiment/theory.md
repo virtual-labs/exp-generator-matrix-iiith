@@ -1,10 +1,9 @@
 In Experiment-1, we provided a brief introduction to block codes and also defined a class of block codes, linear block codes. For rest of the experiments in this virtual lab we shall now focus on linear block codes. In Experiment-1, we also introduced two simple classes of linear block codes, repetition and single parity check codes. In this experiment, we shall focus on the theory general linear block codes. We shall study two important matrices associated with the given linear block code, generator matrix (denoted by $G$) and parity check matrix (denoted by $H$).
 
 The theory associated with Experiment-2 is divided into two parts:
-<br>
-(1) Generator Matrix
-<br>
-(2) Parity Check Matrix
+
+1. Generator Matrix
+2. Parity Check Matrix
 
 ### 1. Generator matrix
 
@@ -73,8 +72,8 @@ Let us consider some examples.
 - Example-2: For $(3,2)$ SPC code, the messages and the corresponding codewords are given below:
 
     <p align="center">
-      <img src="./images/fig1.png" alt="Messages and codewords for (3,2) SPC code"><br>
-      <em>Table 1: Messages and codewords for the $(3,2)$ single parity check (SPC) code.</em>
+      <em>Table 1: Messages and codewords for the $(3,2)$ single parity check (SPC) code.</em><br>
+      <img src="./images/fig1.png" alt="Messages and codewords for (3,2) SPC code">
     </p>
     
     These codeword can be written as
