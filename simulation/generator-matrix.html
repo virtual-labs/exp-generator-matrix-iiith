@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	<title>
+		Generator Matrix
+	</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li id="Task1" onclick="window.location.href = 'index.html';">
+							<a>
+								Encoding
+							</a>
+						</li>
+
+						<li id="Task2" onclick="window.location.href = 'code-book.html';">
+							<a>
+								Codebook Generation
+							</a>
+						</li>
+
+						<li class="is-active" id="Task3">
+							<a>
+								Generator Matrix
+							</a>
+						</li>
+
+						<li id="Task4" onclick="window.location.href = 'code-word.html';">
+							<a>
+								Parity Check Matrix
+							</a>
+						</li>
+
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- <h1 style="text-align: center;">Generator Matrix</h1> -->
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+							<b>Quick theory overview:</b>
+							<li>
+								A linear block code is a \(k\)-dimensional subspace of the vector space \(\mathbb{F}_2^n\).
+								Let \(\mathbf{g}_1, \mathbf{g}_2, \ldots, \mathbf{g}_k\) be a basis of this subspace. Then
+								the generator matrix \(G \in \mathbb{F}_2^{k \times n}\) corresponding to this basis is
+								given by
+
+								\begin{align*}
+								%
+								G=
+								\begin{bmatrix}
+								\leftarrow & \mathbf{g}_1 & \rightarrow \\
+								\leftarrow & \mathbf{g}_2 & \rightarrow \\
+								& \vdots & \\
+								\leftarrow & \mathbf{g}_k & \rightarrow
+								\end{bmatrix}.
+								
+								\end{align*}
+							</li>
+						</ul>
+						<br>
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+							<li>
+								Initially, all the vectors are in grey color.
+							</li>
+
+							<li>
+								Clicking on a vector changes its color from grey to green. Green
+								background indicates that a vector is selected.
+							</li>
+
+							<li>
+								To deselect a vector, click on it again. Its color changes back to grey.
+							</li>
+
+							<li>
+								Select 3 codewords one by one to form the rows of the generator matrix and click on
+								<b>Submit</b>.
+							</li>
+
+							<li>
+								<b>Observations</b> section displays whether a valid generator matrix is selected or
+								not.
+							</li>
+
+							<li>
+								For systematic generator matrix, the <b>order</b> in which the codewords are selected is
+								<b>important</b>.
+							</li>
+
+							<li>
+								<b>Reset</b> - Deselects all the vectors and brings it back to the initial state.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="columns is-centered">
+		<div class="column is-11-desktop is-12-tablet is-12-mobile">
+			<div class="v-datalist-container components-list">
+				<p>
+					Construct a generator matrix of the \( (6, 3) \) linear block code by selecting three codewords from
+					the
+					following codebook.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+		style="margin-top:-1.5%">
+		<div class="column is-8-desktop is-12-tablet is-12-mobile">
+			<div class="box-question">
+				<br>
+				<div class="code-word-1">
+					<button class="button-2" id="w1" onClick="change(id)">
+						<font size="+2">[</font> 0 0 0 0 0 0 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w2" onClick="change(id)">
+						<font size="+2">[</font> 0 0 1 1 0 0 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w3" onClick="change(id)">
+						<font size="+2">[</font> 0 1 0 1 1 0 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w4" onClick="change(id)">
+						<font size="+2">[</font> 0 1 1 0 1 0 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w5" onClick="change(id)">
+						<font size="+2">[</font> 1 0 0 1 1 1 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w6" onClick="change(id)">
+						<font size="+2">[</font> 1 0 1 0 1 1 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w7" onClick="change(id)">
+						<font size="+2">[</font> 1 1 0 0 0 1 <font size="+2">]</font>
+					</button>
+				</div>
+
+				<div class="code-word-1">
+					<button class="button-2" id="w8" onClick="change(id)">
+						<font size="+2">[</font> 1 1 1 1 0 1 <font size="+2">]</font>
+					</button>
+				</div>
+				<br>
+				<br>
+
+				<button class="v-button" role="button" onClick="check()"> Submit </button>
+				<button class="v-button" role="button" onClick="deselect()"> Reset </button>
+
+			</div>
+		</div>
+
+		<div class="column is-3-desktop is-4-tablet is-12-mobile">
+			<div class="v-datalist-container components-list">
+				<div class="v-datalist-title">Observations</div>
+				<div id="observations">
+
+					<span id="display" style="display:none">
+						The matrix chosen is
+						<br>
+						<br>
+						<div class="matrix">
+
+							<div class="bracket" style="font-weight:100; font-size: 5em">
+								[
+							</div>
+							<div class="bracket-1">
+								&ensp; <span id="r1" style="font-weight:bolder"> </span> &ensp;
+								<br>
+								&ensp; <span id="r2" style="font-weight:bolder"> </span> &ensp;
+								<br>
+								&ensp; <span id="r3" style="font-weight:bolder"> </span> &ensp;
+							</div>
+							<div class="bracket" style="font-weight:100; font-size: 5em;">
+								]
+							</div>
+
+						</div>
+					</span>
+					<div class="answer">
+						<span id="ans">
+						</span>
+					</div>
+
+					<div class="hint">
+						<span id="comment">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/generator-matrix.js"></script>
+</body>
+
+</html>
